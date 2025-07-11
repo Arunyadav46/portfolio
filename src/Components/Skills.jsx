@@ -8,9 +8,23 @@ import img5 from "../assets/css.svg"
 import img6 from "../assets/redux.svg"
 import img7 from "../assets/git.svg"
 import img8 from "../assets/github.svg"
-import img9 from "../assets/postman.png"
+import img9 from "../assets/postman1.svg"
 
 function Skills() {
+ 
+  const techNames = [
+  "Reactjs",
+  "Tailwind",
+  "NodeJS",
+  "JavaScript",
+  "Redux",
+  "HTML",
+  "CSS",
+  "Git",
+  "GitHub",
+  "Postman"
+];
+  
   return (
     // <div id="skill" className='w-full  md:pt-20'>
     //      <h2 className="text-4xl font-bold text-white ">
@@ -74,7 +88,7 @@ function Skills() {
   <h2 className='text-center font-extrabold text-white text-3xl pt-10 mb-16'>Tech Stack</h2>
 
   {/* Just updated mobile widths */}
-  <div className='xl:p-5 flex flex-wrap justify-center gap-5 xl:gap-10 pt-10'>
+  {/* <div className='xl:p-5 flex flex-wrap justify-center gap-5 xl:gap-10 pt-10'>
     {[img, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
       <div
         key={i}
@@ -83,7 +97,27 @@ function Skills() {
         <img className='w-[60%] h-[60%] object-contain' src={image} alt={`skill-${i}`} />
       </div>
     ))}
-  </div>
+  </div> */}
+  <div className='xl:p-5 flex flex-wrap justify-center gap-5 xl:gap-10 pt-10'>
+  {[img, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
+    <div
+      key={i}
+      className='group relative w-[90%] sm:w-[40%] md:w-[22%] xl:w-[18%] h-[22vh] bg-[#12121E] border-2 border-gray-800 rounded-3xl flex items-center justify-center overflow-hidden'
+    >
+      {/* Hover Overlay Text */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-start justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+        <span className="text-white font-semibold text-lg">{techNames[i]}</span>
+      </div>
+
+      {/* Tech Image */}
+      <img
+        className='w-[60%] h-[60%] object-contain z-10'
+        src={image}
+        alt={`skill-${i}`}
+      />
+    </div>
+  ))}
+</div>
 </div>
 
   )
