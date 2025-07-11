@@ -2,8 +2,8 @@ import React from 'react'
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
 function Contact() {
   return (
-    <section id="contact" className=" text-white py-16 px-6">
-         <h2 className="text-4xl font-bold mb-32 text-center">
+    <section id="contact" className="text-white py-16 px-6">
+         <h2 className="text-4xl font-bold xl:mb-32 text-center">
             <span className="border-b-4 border-purple-600 pb-1">Get In Touch</span>
           </h2>
       <div className="max-w-7xl mx-auto  grid md:grid-cols-2 gap-12">

@@ -3,7 +3,13 @@ import React from 'react'
 function About() {
   return (
     <div id="about" className='w-full xl:h-[60vh] '>
-        <h1 className='text-4xl text-white font-semibold'>About me</h1>
+      <div className='flex pt-20 md:px-0 md:pt-0 gap-2'>
+        {/* <div className='px-4 py-1 font-bold text-[14px] text-purple-800 border border-purple-800 rounded-full flex justify-center items-center'>01</div> */}
+            <h2 className="text-4xl font-bold text-white text-center">
+            <span className="border-b-4 border-purple-600 pb-1">About Me</span>
+          </h2>
+      </div>
+        
             <section className=" text-white py-16">
       <div className="max-w-7xl  flex flex-col md:flex-row items-center gap-10">
         

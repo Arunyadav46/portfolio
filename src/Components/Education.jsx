@@ -3,8 +3,10 @@ import React from 'react'
 function Education() {
   return (
      <section className="bg-[#11111b] text-white">
-      <h2 className="text-3xl font-bold text-teal-400">Education</h2>
-      <p className="text-gray-400 mt-2 mb-10 text-sm">
+       <h2 className="text-4xl font-bold text-white">
+    <span className="border-b-4 border-purple-600 pb-1">Education</span>
+  </h2>
+      <p className="text-gray-400 mt-8 mb-10 text-sm">
         A brief overview of my academic background.
       </p>
 
@@ -18,7 +20,7 @@ function Education() {
         </div>
 
         {/* Main content */}
-        <div className="ml-10 flex flex-col md:flex-row w-full gap-8">
+        <div className="xl:ml-10 ml-3 flex flex-col md:flex-row w-full gap-8">
           {/* Left Column */}
           <div className="md:w-1/3">
             <h3 className="text-xl font-semibold text-white">Bachelor of Technology (B.Tech)</h3>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div id="footer">
+    <div id="footer" className='w-full'>
         <hr className="border-t border-gray-600" />
        <div className='flex items-center justify-between py-5 text-gray-600'>
         <div>

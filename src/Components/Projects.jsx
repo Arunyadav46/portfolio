@@ -6,17 +6,19 @@ import img2  from "../assets/ems.png"
 
 function Projects() {
   return (
-    <div id="project" className='w-full  pt-20 '>
-     <h2 className="text-4xl font-bold text-teal-400 mb-20">Projects</h2>
+    <div id="project" className='w-full pt-10  xl:pt-20 '>
+     {/* <h2 className="text-4xl font-bold border-b-4 border-purple-600 text-white mb-14 xl:mb-20">Projects</h2> */}
+      <h2 className="text-4xl font-bold text-white mb-10">
+    <span className="border-b-4 border-purple-600 pb-1">Projects</span>
+  </h2>
      <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4'>
       <div className=" rounded-2xl p-2 border border-gray-600 overflow-hidden shadow-lg bg-[#0F0F0F] text-white">
       {/* Image */}
-      <div className='w-full h-[50%]'>
-        <img className='w-full h-full object-center' src={img} alt="" />
+      <div className='w-full h-56'>
+        <img className='w-full h-full' src={img} alt="" />
       </div>
       
-     
-
+    
       {/* Content */}
       <div className="p-2">
         <h2 className="text-2xl font-semibold mb-2">Personal Portfolio</h2>
@@ -65,7 +67,7 @@ function Projects() {
      <div className=" rounded-2xl p-2 border border-gray-600 overflow-hidden shadow-lg bg-[#0F0F0F] text-white">
       {/* Image */}
        {/* Image */}
-      <div className='w-[100%] h-[50%] bg-red-100 rounded-md'>
+      <div className='w-[100%] h-56  rounded-md'>
         <img className='w-full h-full  rounded-md' src={img1} alt="" />
       </div>
      
