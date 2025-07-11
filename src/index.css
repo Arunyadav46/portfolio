@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../src/fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../src//fonts//Poppins-Medium.ttf");
+}
+#nav{
+    font-family: "Poppins";
+}
