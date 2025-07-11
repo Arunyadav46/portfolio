@@ -98,6 +98,10 @@ function Skills() {
       </div>
     ))}
   </div> */}
+   {/* Glowing effect (hidden on small screens) */}
+    <div className="hidden md:block absolute right-[520px] top-[250%] transform -translate-y-1/2 z-0">
+      <div className="w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-pink-300 via-purple-500 to-blue-500 opacity-10 blur-[250px] animate-glow origin-left" />
+    </div>
   <div className='xl:p-5 flex flex-wrap justify-center gap-5 xl:gap-10 pt-10'>
   {[img, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
     <div

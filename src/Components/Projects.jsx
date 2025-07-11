@@ -41,7 +41,7 @@ function Projects() {
      
      <div className='flex justify-between p-2'>
      <a
-          href="#"
+          href="https://portfolio-teal-five-18.vercel.app/"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -50,7 +50,7 @@ function Projects() {
           </div>
         </a>
          <a
-          href="#"
+          href="https://github.com/Arunyadav46/portfolio"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -94,7 +94,7 @@ function Projects() {
      
      <div className='flex justify-between p-2'>
      <a
-          href="#"
+          href="https://ds-tarena-yei8.vercel.app"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -103,7 +103,7 @@ function Projects() {
           </div>
         </a>
          <a
-          href="#"
+          href="https://github.com/Arunyadav46/DSTarena"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -146,7 +146,7 @@ function Projects() {
      
      <div className='flex justify-between p-2'>
      <a
-          href="#"
+          href="https://ems-1-two.vercel.app"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -155,7 +155,7 @@ function Projects() {
           </div>
         </a>
          <a
-          href="#"
+          href="https://github.com/Arunyadav46/EMS1"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>

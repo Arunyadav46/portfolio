@@ -42,6 +42,9 @@ function Education() {
 </div>
         </div>
       </div>
+      <div className="hidden md:block absolute right-[520px] top-[500%] transform -translate-y-1/2 z-0">
+      <div className="w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-pink-300 via-purple-500 to-blue-500 opacity-10 blur-[250px] animate-glow origin-left" />
+    </div>
     </section>
   )
 }
