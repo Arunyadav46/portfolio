@@ -78,7 +78,7 @@ function Skills() {
     {[img, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
       <div
         key={i}
-        className='w-[47%] sm:w-[40%] md:w-[22%] xl:w-[18%] h-[22vh] bg-[#12121E] border-2 border-gray-800 rounded-3xl flex items-center justify-center'
+        className='w-[90%] sm:w-[40%] md:w-[22%] xl:w-[18%] h-[22vh] bg-[#12121E] border-2 border-gray-800 rounded-3xl flex items-center justify-center'
       >
         <img className='w-[60%] h-[60%] object-contain' src={image} alt={`skill-${i}`} />
       </div>
