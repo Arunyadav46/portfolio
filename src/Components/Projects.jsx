@@ -2,6 +2,7 @@ import React from 'react'
 import img from "../assets/portfolio.png"
 import img1 from "../assets/dstarena.png"
 import img2  from "../assets/ems.png"
+import img3 from "../assets/Tmdb.png"
 
 
 function Projects() {
@@ -93,25 +94,27 @@ function Projects() {
         </div>
      
      <div className='flex justify-between p-2'>
-     <a
-          href="https://ds-tarena-yei8.vercel.app"
-          className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
-        >
-          <div className='flex items-center gap-2'>
-            <h1>Live</h1>
-            <h1><i class="ri-corner-down-right-line mt-2"></i></h1>
-          </div>
-        </a>
-         <a
-          href="https://github.com/Arunyadav46/DSTarena"
-          className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
-        >
-          <div className='flex items-center gap-2'>
-            <h1>Github</h1>
-            <h1><i class="ri-github-fill"></i></h1>
-          </div>
-        </a>
-        
+      <a
+  href="https://ds-tarena-yei8.vercel.app"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
+>
+  <span>Live</span>
+  <i className="ri-corner-down-right-line mt-1"></i>
+</a>
+
+<a
+  href="https://github.com/Arunyadav46/DSTarena"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
+>
+  <span>Github</span>
+  <i className="ri-github-fill"></i>
+</a>
+
+
      </div>
      
        
@@ -125,10 +128,9 @@ function Projects() {
 
       {/* Content */}
       <div className="p-2">
-        <h2 className="text-2xl font-semibold mb-2">Task Manager</h2>
+        <h2 className="text-2xl font-semibold mb-2">EMS</h2>
         <p className="text-gray-400 text-sm mb-4">
-          A seamless food delivery platform similar to Zomato, featuring real-time order tracking,
-          restaurant discovery, and secure payment processing.
+         Built a responsive Employee Management System using ReactJS and Tailwind CSS, featuring task assignment and tracking with Context API and LocalStorage—no backend required.
         </p>
 
         {/* Tags */}
@@ -172,7 +174,7 @@ function Projects() {
 
      <div className=" rounded-2xl p-2 border border-gray-600 overflow-hidden shadow-lg bg-[#0F0F0F] text-white">
       {/* Image */}
-      <img className='w-full h-56' src={img} alt="" />
+      <img className='w-full h-56 object-contain' src={img3} alt="" />
      
 
       {/* Content */}
