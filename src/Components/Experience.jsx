@@ -36,11 +36,12 @@ function Experience() {
           {/* Right Column */}
           <div className="md:w-2/3 text-sm text-gray-300">
             <ul className="space-y-2 text-[17px]">
-              <li>– Developed a real-time chat system using WebSockets and REST APIs, improving platform communication efficiency.</li>
-              <li>– Refactored legacy codebase, increasing maintainability and reducing bug frequency by 60%.</li>
-              <li>– Optimized database queries, reducing API response time by 30%.</li>
-              <li>– Documented backend modules and API services, enhancing onboarding efficiency.</li>
-              <li>– <span className="text-white font-medium">Tech Stack:</span> Node.js, Express.js, MongoDB, WebSockets, JWT, Postman, Git, GitHub, Jira.</li>
+              <li>–  Developed and maintained responsive web pages using ReactJS and Tailwind CSS.</li>
+              <li>– Rebuilt the DSTarena website using ReactJS and Tailwind CSS with improved UI/UX.</li>
+              <li>–Integrated APIs with Axios and implemented features like form validation and referral systems.</li>
+              <li>–Converted static templates into responsive React components.</li>
+              <li>– Used Git and GitHub for version control and team collaboration.</li>
+              <li>– <span className="text-white font-medium">Tech Stack:</span> ReactJS, Tailwind CSS, Axios, JavaScript, Git, GitHub Postman.</li>
             </ul>
             <div className="py-10">
             <hr className="border-gray-600" />

@@ -17,10 +17,10 @@ function About() {
         <div className="md:w-1/2 space-y-6 text-base md:text-lg leading-relaxed">
     
           <p>
-            Hello! I'm <span className="text-blue-500 font-semibold">Arun Yadav</span>, a passionate frontend developer who enjoys designing sleek interfaces and building interactive web experiences.
+            Hello! I'm <span className="text-blue-500 font-semibold">Arun Yadav</span>, a passionate React frontend developer who loves crafting sleek interfaces and building interactive, user-friendly web experiences.
           </p>
           <p className='text-justify'>
-            My journey started during my first year of college, and since then, I've loved working on unique, user-focused applications. From portfolios to real-world client projects, I enjoy coding things from scratch and making designs come to life.
+             As an Electrical and Electronics Engineering student, I started coding in 3rd year out of passion. Since then, I’ve built responsive web apps using ReactJS and Tailwind CSS—proving consistency matters more than background.
           </p>
           <p className='text-just'>
             I’m currently focused on learning, collaborating, and continuously pushing my skills to the next level.
@@ -33,7 +33,7 @@ function About() {
     <pre className="whitespace-pre-wrap text-white">
 <span className="text-blue-400">const</span> developer = {'{'}
   {"\n  "}<span className="text-blue-400">name</span>: <span className="text-green-400">"Arun Yadav"</span>,
-  {"\n  "}<span className="text-blue-400">title</span>: <span className="text-green-400">"Frontend Developer"</span>,
+  {"\n  "}<span className="text-blue-400">title</span>: <span className="text-green-400">"React Frontend Developer"</span>,
   {"\n  "}<span className="text-blue-400">skills</span>: [<span className="text-green-400">"JavaScript", "ReactJS", "Tailwind CSS"</span>],
   {"\n  "}<span className="text-blue-400">tools</span>: [<span className="text-green-400">"VS Code", "Git", "GitHub", "Vercel"</span>],
   {"\n  "}<span className="text-blue-400">passion</span>: <span className="text-green-400">"Designing modern UIs & building responsive websites"</span>,

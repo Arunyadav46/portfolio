@@ -32,9 +32,12 @@ function Education() {
          <div className="md:w-2/3 text-sm text-gray-300">
   <ul className="space-y-2 text-[17px]">
     <li>– Branch: Electrical and Electronics Engineering (EEE).</li>
-    <li>– Built strong fundamentals in mathematics, logic design, and embedded systems.</li>
-    <li>– Self-learned software development: backend systems, REST APIs, and full-stack projects.</li>
-    <li>– CGPA: <span className="text-white font-medium">7.34 / 10</span></li>
+    {/* <li>– Built strong fundamentals in mathematics, logic design, and embedded systems.</li> */}
+     <li>
+  – Self-learned React developer with strong frontend skills and a working knowledge of backend systems, REST APIs, and integration workflows.
+</li>
+
+    <li>– CGPA: <span className="text-white font-medium">7.38 / 10</span></li>
   </ul>
   <div className='py-16 text-gray-100'>
     <hr />

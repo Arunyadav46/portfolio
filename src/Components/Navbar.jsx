@@ -129,12 +129,61 @@ function Navbar() {
           <i className="ri-close-line text-3xl cursor-pointer" onClick={() => setIsOpen(false)}></i>
         </div>
         {/* Sidebar Content */}
-        <ul className="space-y-6 text-lg">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Experience</li>
-          <li>Projects</li>
+        <ul className="space-y-6 flex flex-col text-lg">
+           <Link
+        to="home"
+        smooth={true}
+        duration={600}
+        offset={-70}
+        className="cursor-pointer"
+        onClick={() => setIsOpen(false)}
+      >
+        Home
+      </Link>
+             <Link
+        to="about"
+        smooth={true}
+        duration={600}
+        offset={-70}
+        className="cursor-pointer"
+        onClick={() => setIsOpen(false)}
+      >
+        About
+      </Link>
+          
+         <Link
+        to="skill"
+        smooth={true}
+        duration={600}
+        offset={-70}
+        className="cursor-pointer"
+        onClick={() => setIsOpen(false)}
+      >
+       Skills
+      </Link>
+
+
+           <Link
+        to="experience"
+        smooth={true}
+        duration={600}
+        offset={-70}
+        className="cursor-pointer"
+        onClick={() => setIsOpen(false)}
+      >
+       Experience
+      </Link>
+
+             <Link
+        to="project"
+        smooth={true}
+        duration={600}
+        offset={-70}
+        className="cursor-pointer"
+        onClick={() => setIsOpen(false)}
+      >
+       Projects
+      </Link>
         </ul>
       </div>
 
