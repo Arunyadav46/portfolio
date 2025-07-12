@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="text-white py-16 px-6">
+    <section id="contact" className="text-white py-16 px-3 xl:px-6">
          <h2 className="text-4xl font-bold xl:mb-32 text-center">
             <span className="border-b-4 border-purple-600 pb-1">Get In Touch</span>
           </h2>

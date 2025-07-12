@@ -139,10 +139,10 @@ function Projects() {
             React js
           </span>
           <span className="bg-[#1f1f1f] text-sm px-3 py-1 rounded-full text-purple-300">
-            Tailwind css
+            Context API
           </span>
           <span className="bg-[#1f1f1f] text-sm px-3 py-1 rounded-full text-purple-300">
-            Emailjs
+            LocalStorage
           </span>
         </div>
      
@@ -181,8 +181,7 @@ function Projects() {
       <div className="p-2">
         <h2 className="text-2xl font-semibold mb-2">TMDB</h2>
         <p className="text-gray-400 text-sm mb-4">
-          A seamless food delivery platform similar to Zomato, featuring real-time order tracking,
-          restaurant discovery, and secure payment processing.
+          Built a movie website using ReactJS and the TMDB API with real-time data for popular, trending, and top-rated movies. Designed a responsive UI using Tailwind CSS.
         </p>
 
         {/* Tags */}
@@ -191,16 +190,16 @@ function Projects() {
             React js
           </span>
           <span className="bg-[#1f1f1f] text-sm px-3 py-1 rounded-full text-purple-300">
-            Tailwind css
+            Axios
           </span>
           <span className="bg-[#1f1f1f] text-sm px-3 py-1 rounded-full text-purple-300">
-            Emailjs
+            React Router Dom
           </span>
         </div>
      
      <div className='flex justify-between p-2'>
      <a
-          href="#"
+          href="https://tmdb-2-six.vercel.app/"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
@@ -209,7 +208,7 @@ function Projects() {
           </div>
         </a>
          <a
-          href="#"
+          href="https://github.com/Arunyadav46/TMDB2"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
