@@ -94,31 +94,34 @@ function Projects() {
         </div>
      
      <div className='flex justify-between p-2'>
-      <a
+     <a
   href="https://ds-tarena-yei8.vercel.app"
   target="_blank"
   rel="noopener noreferrer"
-  className="flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
+  className="relative z-10 flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
 >
   <span>Live</span>
   <i className="ri-corner-down-right-line mt-1"></i>
 </a>
 
+
 <a
   href="https://github.com/Arunyadav46/DSTarena"
   target="_blank"
   rel="noopener noreferrer"
-  className="flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
+  className="relative z-10 flex items-center gap-2 text-purple-400 px-4 py-2 border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
 >
   <span>Github</span>
   <i className="ri-github-fill"></i>
 </a>
 
 
+
      </div>
      
        
       </div>
+
     </div>
 
       <div className=" rounded-2xl p-2 border border-gray-600 overflow-hidden shadow-lg bg-[#0F0F0F] text-white">
