@@ -119,7 +119,6 @@ function Projects() {
 
      </div>
      
-       
       </div>
 
     </div>
@@ -151,7 +150,7 @@ function Projects() {
      
      <div className='flex justify-between p-2'>
      <a
-          href="https://ems-1-two.vercel.app"
+          href="https://task-manager-v996.vercel.app"
           className="text-purple-400 px-4 py-2  border border-gray-700 rounded-md text-[16px] font-semibold hover:underline text-sm"
         >
           <div className='flex items-center gap-2'>
