@@ -79,11 +79,11 @@ function Experience() {
             >
               <h3 className={`text-xl font-semibold ${
                 isLightTheme ? 'text-gray-900' : 'text-white'
-              }`}>Frontend Developer Intern</h3>
+              }`}>React.js Developer</h3>
               <p className={`text-sm mt-1 ${
                 isLightTheme ? 'text-gray-600' : 'text-gray-400'
-              }`}>onpriceinfo.com</p>
-              <p className="text-teal-400 text-sm mt-1">[ Feb 2025 - Present ]</p>
+              }`}>NanoStack.io</p>
+              <p className="text-teal-400 text-sm mt-1">[ 1 Year Experience ]</p>
             </motion.div>
 
             {/* Right Column */}
@@ -97,12 +97,15 @@ function Experience() {
             >
               <ul className="space-y-2 text-[17px]">
                 {[
-                  "– Developed and maintained responsive web pages using ReactJS and Tailwind CSS.",
-                  "– Rebuilt the DSTarena website using ReactJS and Tailwind CSS with improved UI/UX.",
-                  "– Integrated APIs with Axios and implemented features like form validation and referral systems.",
-                  "– Converted static templates into responsive React components.",
-                  "– Used Git and GitHub for version control and team collaboration.",
-                  "– Tech Stack: ReactJS, Tailwind CSS, Axios, JavaScript, Git, GitHub Postman."
+                  "– Project: Adam ERP (Enterprise Resource Planning System)",
+                  "– Developed scalable ERP modules using React.js, Redux, and REST APIs, handling complex business workflows.",
+                  "– Integrated and managed 100+ REST APIs using Axios with interceptors, ensuring secure, efficient, and scalable data communication across ERP modules.",
+                  "– Implemented global state management using Redux, improving data consistency across multiple modules.",
+                  "– Optimized application performance using useMemo, useCallback, and lazy loading, reducing unnecessary re-renders.",
+                  "– Built and validated complex forms using Formik, including proper form state management and validations.",
+                  "– Collaborated closely with testers to identify UI and functional issues, and fixed bugs reported during QA cycles.",
+                  "– Worked with backend and QA teams to ensure smooth API integration, data consistency, and stable feature delivery.",
+                  "– Tech Stack: React.js, Redux, REST APIs, Axios, Formik, JavaScript, Git, GitHub."
                 ].map((item, index) => (
                   <motion.li
                     key={index}
@@ -114,7 +117,13 @@ function Experience() {
                       <>
                         – <span className={`font-medium ${
                           isLightTheme ? 'text-gray-900' : 'text-white'
-                        }`}>Tech Stack:</span> ReactJS, Tailwind CSS, Axios, JavaScript, Git, GitHub Postman.
+                        }`}>Tech Stack:</span> React.js, Redux, REST APIs, Axios, Formik, JavaScript, Git, GitHub.
+                      </>
+                    ) : item.includes("Project:") ? (
+                      <>
+                        – <span className={`font-medium ${
+                          isLightTheme ? 'text-gray-900' : 'text-white'
+                        }`}>Project:</span> Adam ERP (Enterprise Resource Planning System)
                       </>
                     ) : (
                       item
