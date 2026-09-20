@@ -2,9 +2,10 @@ import React, { useRef } from 'react'
 import { useTheme } from '../Context/ThemeContext'
 import { motion, useInView } from 'framer-motion'
 import img from "../assets/portfolio.png"
-import img1 from "../assets/dstarena.png"
+import img1 from "../assets/studymate.png"
 import img2  from "../assets/ems.png"
 import img3 from "../assets/Tmdb.png"
+import img4 from "../assets/jobmate.png"
 
 
 function Projects() {
@@ -29,7 +30,7 @@ function Projects() {
         animate={isInView ? "visible" : "hidden"}
       >
       <motion.div 
-        className={`rounded-2xl p-2 border overflow-hidden shadow-lg ${
+        className={`project-card rounded-2xl p-2 border overflow-hidden shadow-lg ${
           isLightTheme 
             ? 'border-gray-300 bg-white text-gray-900' 
             : 'border-gray-600 bg-[#0F0F0F] text-white'
@@ -121,7 +122,7 @@ function Projects() {
     </motion.div>
 
      <motion.div 
-        className={`rounded-2xl p-2 border overflow-hidden shadow-lg ${
+        className={`project-card rounded-2xl p-2 border overflow-hidden shadow-lg ${
           isLightTheme 
             ? 'border-gray-300 bg-white text-gray-900' 
             : 'border-gray-600 bg-[#0F0F0F] text-white'
@@ -137,17 +138,17 @@ function Projects() {
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       >
-        <img className='w-full h-full rounded-md object-cover' src={img1} alt="" />
+        <img className='w-full h-full rounded-md object-cover' src={img1} alt="AI-Powered Study Assistant" />
       </motion.div>
      
 
       {/* Content */}
       <div className="p-2">
-        <h2 className="text-2xl font-semibold mb-2">Dstarena</h2>
+        <h2 className="text-2xl font-semibold mb-2">AI-Powered Study Assistant</h2>
         <p className={`text-sm mb-4 ${
           isLightTheme ? 'text-gray-600' : 'text-gray-400'
         }`}>
-          Developed the DSTARENA web app during my internship using ReactJS and Tailwind CSS. Added features like user registration, referral system, form validation, and API integration.
+          Developed an AI-powered study assistant using Next.js and TypeScript to help users organize study materials and improve learning. Implemented notes CRUD with MongoDB Atlas, Gemini AI summaries and quizzes, and Next.js API routes with Mongoose, then deployed on Vercel.
         </p>
 
         {/* Tags */}
@@ -157,27 +158,41 @@ function Projects() {
               ? 'bg-gray-100 text-purple-600' 
               : 'bg-[#1f1f1f] text-purple-300'
           }`}>
-            React js
+            Next.js
           </span>
           <span className={`text-sm px-3 py-1 rounded-full ${
             isLightTheme 
               ? 'bg-gray-100 text-purple-600' 
               : 'bg-[#1f1f1f] text-purple-300'
           }`}>
-            Tailwind css
+            TypeScript
           </span>
           <span className={`text-sm px-3 py-1 rounded-full ${
             isLightTheme 
               ? 'bg-gray-100 text-purple-600' 
               : 'bg-[#1f1f1f] text-purple-300'
           }`}>
-            Axios
+            Tailwind CSS
+          </span>
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            MongoDB
+          </span>
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            Gemini AI
           </span>
         </div>
      
      <div className='flex justify-between p-2'>
      <motion.a
-  href="https://ds-tarena-yei8.vercel.app"
+  href="https://ai-studymate-wsfk.vercel.app/dashboard"
   target="_blank"
   rel="noopener noreferrer"
   className={`relative z-10 flex items-center gap-2 px-4 py-2 border rounded-md text-[16px] font-semibold hover:underline text-sm ${
@@ -193,7 +208,7 @@ function Projects() {
 </motion.a>
 
 <motion.a
-  href="https://github.com/Arunyadav46/DSTarena"
+  href="https://github.com/Arunyadav46/ai-studymate"
   target="_blank"
   rel="noopener noreferrer"
   className={`relative z-10 flex items-center gap-2 px-4 py-2 border rounded-md text-[16px] font-semibold hover:underline text-sm ${
@@ -215,7 +230,107 @@ function Projects() {
     </motion.div>
 
       <motion.div 
-        className={`rounded-2xl p-2 border overflow-hidden shadow-lg ${
+        className={`project-card rounded-2xl p-2 border overflow-hidden shadow-lg ${
+          isLightTheme 
+            ? 'border-gray-300 bg-white text-gray-900' 
+            : 'border-gray-600 bg-[#0F0F0F] text-white'
+        }`}
+        initial={{ opacity: 0, y: 50, scale: 0.9 }}
+        animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+        transition={{ duration: 0.5, delay: 0.32, type: "spring", stiffness: 100 }}
+        whileHover={{ y: -10, scale: 1.02, transition: { duration: 0.3 } }}
+      >
+      {/* Image */}
+      <motion.div 
+        className='w-[100%] h-56 rounded-md overflow-hidden'
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+      >
+        <img className='w-full h-full rounded-md object-cover' src={img4} alt="AI JobMate" />
+      </motion.div>
+
+      {/* Content */}
+      <div className="p-2">
+        <h2 className="text-2xl font-semibold mb-2">AI JobMate</h2>
+        <p className={`text-sm mb-4 ${
+          isLightTheme ? 'text-gray-600' : 'text-gray-400'
+        }`}>
+          AI JobMate is an AI-powered web application built with Next.js, TypeScript, and AI integration. It helps users analyze their resumes, identify skill gaps, generate job-specific interview questions, and prepare for interviews with personalized AI-driven insights.
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mb-4">
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            Next.js
+          </span>
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            TypeScript
+          </span>
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            Tailwind CSS
+          </span>
+          <span className={`text-sm px-3 py-1 rounded-full ${
+            isLightTheme 
+              ? 'bg-gray-100 text-purple-600' 
+              : 'bg-[#1f1f1f] text-purple-300'
+          }`}>
+            Gemini AI
+          </span>
+        </div>
+     
+     <div className='flex justify-between p-2'>
+     <motion.a
+  href="https://ai-jobmate-chi.vercel.app/dashboard"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`relative z-10 flex items-center gap-2 px-4 py-2 border rounded-md text-[16px] font-semibold hover:underline text-sm ${
+    isLightTheme 
+      ? 'text-purple-600 border-gray-300' 
+      : 'text-purple-400 border-gray-700'
+  }`}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <span>Live</span>
+  <i className="ri-corner-down-right-line mt-1"></i>
+</motion.a>
+
+<motion.a
+  href="https://github.com/Arunyadav46/ai-jobmate"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`relative z-10 flex items-center gap-2 px-4 py-2 border rounded-md text-[16px] font-semibold hover:underline text-sm ${
+    isLightTheme 
+      ? 'text-purple-600 border-gray-300' 
+      : 'text-purple-400 border-gray-700'
+  }`}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+>
+  <span>Github</span>
+  <i className="ri-github-fill"></i>
+</motion.a>
+
+     </div>
+     
+      </div>
+
+    </motion.div>
+
+      <motion.div 
+        className={`project-card rounded-2xl p-2 border overflow-hidden shadow-lg ${
           isLightTheme 
             ? 'border-gray-300 bg-white text-gray-900' 
             : 'border-gray-600 bg-[#0F0F0F] text-white'
@@ -308,7 +423,7 @@ function Projects() {
     </motion.div>
 
      <motion.div 
-        className={`rounded-2xl p-2 border overflow-hidden shadow-lg ${
+        className={`project-card rounded-2xl p-2 border overflow-hidden shadow-lg ${
           isLightTheme 
             ? 'border-gray-300 bg-white text-gray-900' 
             : 'border-gray-600 bg-[#0F0F0F] text-white'

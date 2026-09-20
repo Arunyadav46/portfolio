@@ -2,8 +2,8 @@ import React from 'react'
 import { useTheme } from '../Context/ThemeContext'
 import { motion } from 'framer-motion'
 import img from "../assets/react.svg"
-import img1 from "../assets/nodej.png"
-import img2 from "../assets/tailwind.png"
+import img1 from "../assets/nextjs.svg"
+import img2 from "../assets/typescript.svg"
 import img3 from "../assets/redux.svg"
 
 function Hero() {
@@ -126,7 +126,7 @@ function Hero() {
     variants={itemVariants}
   >
     <motion.h1 
-      className='text-4xl md:text-5xl font-semibold mb-3'
+      className='text-4xl md:text-5xl font-semibold mb-3 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent'
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.2 }}
@@ -134,13 +134,27 @@ function Hero() {
       Arun Yadav
     </motion.h1>
     <motion.h2 
-      className={`text-xl md:text-2xl mb-6 ${isLightTheme ? 'text-gray-600' : 'text-gray-400'}`}
+      className={`text-xl md:text-2xl mb-3 ${isLightTheme ? 'text-gray-600' : 'text-gray-400'}`}
       initial={{ opacity: 0, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay: 0.4 }}
     >
       React Developer
     </motion.h2>
+    <motion.div
+      className={`inline-flex items-center gap-2 mb-6 px-3 py-1 rounded-full text-sm ${
+        isLightTheme ? 'bg-emerald-50 text-emerald-700' : 'bg-emerald-500/10 text-emerald-400'
+      }`}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+    >
+      <span className="relative flex h-2.5 w-2.5">
+        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+        <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+      </span>
+      Open to work
+    </motion.div>
 
     <motion.div 
       className={`flex flex-col sm:flex-row gap-4 mb-5 ${isLightTheme ? 'text-gray-600' : 'text-gray-400'}`}
@@ -167,7 +181,7 @@ function Hero() {
       variants={itemVariants}
     >
       <p className={`text-base md:text-[18px] ${isLightTheme ? 'text-gray-700' : 'text-gray-300'}`}>
-       Passionate React developer with hands-on experience in building responsive, user-friendly web apps using ReactJS, Tailwind CSS, Redux, and Node.js. Focused on creating clean UI and solving real-world problems through code.
+       I'm a Frontend Developer with hands-on experience building responsive and user-friendly web applications using React.js, Next.js, TypeScript, and Redux Toolkit. I also have basic knowledge of DevOps and a strong focus on creating clean UI and solving real-world problems through code.
       </p>
     </motion.div>
 
@@ -175,8 +189,10 @@ function Hero() {
       className='flex flex-col sm:flex-row gap-4 items-start sm:items-center'
       variants={itemVariants}
     >
-      <motion.div 
-        className={`flex items-center gap-2 px-5 py-2 rounded-md w-fit ${
+      <motion.a
+        href="/Arun_Yadav_Resume.pdf"
+        download="Arun_Yadav_Resume.pdf"
+        className={`cta-shine flex items-center gap-2 px-5 py-2 rounded-md w-fit shadow-lg shadow-purple-500/20 ${
           isLightTheme ? 'bg-gray-900 text-white' : 'bg-white text-black'
         }`}
         whileHover={{ scale: 1.05 }}
@@ -184,7 +200,7 @@ function Hero() {
       >
         <i className="ri-download-line"></i>
         <h2>Resume</h2>
-      </motion.div>
+      </motion.a>
       <div className='flex gap-3 mt-2 sm:mt-2'>
         {[
           { href: "https://github.com/Arunyadav46", icon: "ri-github-fill" },
@@ -203,8 +219,10 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 + index * 0.1 }}
           >
-            <i className={`text-xl ${social.icon} border-2 rounded-md px-4 py-2 ${
-              isLightTheme ? 'border-gray-300 text-gray-900' : 'border-gray-800 text-white'
+            <i className={`text-xl ${social.icon} border-2 rounded-md px-4 py-2 transition-colors duration-300 ${
+              isLightTheme
+                ? 'border-gray-300 text-gray-900 hover:border-purple-500 hover:text-purple-600'
+                : 'border-gray-800 text-white hover:border-purple-400 hover:text-purple-300'
             }`}></i>
           </motion.a>
         ))}
@@ -238,13 +256,13 @@ function Hero() {
       {[
         { img: img, name: "ReactJs" },
         { img: img3, name: "Redux" },
-        { img: img1, name: "NodeJs" },
-        { img: img2, name: "Tailwind CSS" }
+        { img: img1, name: "Next.js" },
+        { img: img2, name: "TypeScript" }
       ].map((skill, index) => (
         <motion.div
           key={index}
-          className={`flex flex-col justify-center items-center rounded-md h-[20vh] ${
-            isLightTheme ? 'bg-gray-100' : 'bg-[#1e1e2e]'
+          className={`flex flex-col justify-center items-center rounded-md h-[20vh] border transition-shadow duration-300 hover:shadow-lg hover:shadow-purple-500/20 ${
+            isLightTheme ? 'bg-gray-100 border-gray-200' : 'bg-[#1e1e2e] border-white/5'
           }`}
           variants={cardVariants}
           whileHover="hover"

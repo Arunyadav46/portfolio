@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Gilroy', 'Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+      },
       transformOrigin: {
         'left-center': 'left center',
         'top-left': 'top left',
@@ -24,5 +28,4 @@ export default {
   },
   plugins: [],
 }
-
 

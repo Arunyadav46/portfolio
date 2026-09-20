@@ -73,7 +73,7 @@ function Contact() {
           <div className="space-y-6">
             {[
               { icon: FaEnvelope, label: "Email", value: "yarun4622@gmail.com", link: null },
-              { icon: FaMapMarkerAlt, label: "Location", value: "Bhopal, India", link: null },
+              { icon: FaMapMarkerAlt, label: "Location", value: "Bangalore, Karnataka, India", link: null },
               { icon: FaLinkedin, label: "LinkedIn", value: "linkedin.com/in/arun-yadav-539606267/", link: "https://www.linkedin.com/in/arun-yadav-539606267/" }
             ].map((item, index) => (
               <motion.div
@@ -167,7 +167,7 @@ function Contact() {
         </div>
         <motion.button
           type="submit"
-          className="w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-md font-medium flex items-center justify-center gap-2 transition"
+          className="cta-shine w-full bg-purple-700 hover:bg-purple-800 text-white py-3 rounded-md font-medium flex items-center justify-center gap-2 transition shadow-lg shadow-purple-700/30"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >

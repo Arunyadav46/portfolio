@@ -11,6 +11,8 @@ import img6 from "../assets/redux.svg"
 import img7 from "../assets/git.svg"
 import img8 from "../assets/github.svg"
 import img9 from "../assets/postman1.svg"
+import img10 from "../assets/nextjs.svg"
+import img11 from "../assets/typescript.svg"
 
 function Skills() {
   const { isLightTheme } = useTheme();
@@ -18,6 +20,8 @@ function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   const techNames = [
   "Reactjs",
+  "Next.js",
+  "TypeScript",
   "Tailwind",
   "NodeJS",
   "JavaScript",
@@ -125,7 +129,7 @@ function Skills() {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {[img, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
+        {[img, img10, img11, img1, img2, img3, img6, img4, img5, img7, img8, img9].map((image, i) => (
           <motion.div
             key={i}
             className={`group relative w-[40%] sm:w-[40%] md:w-[22%] xl:w-[18%] xl:h-[22vh] border-2 rounded-3xl flex items-center justify-center overflow-hidden ${
@@ -144,6 +148,7 @@ function Skills() {
             whileHover={{ 
               scale: 1.1, 
               rotate: [0, -5, 5, -5, 0],
+              boxShadow: "0 16px 30px -12px rgba(147, 51, 234, 0.45)",
               transition: { duration: 0.5 }
             }}
           >

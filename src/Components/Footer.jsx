@@ -10,7 +10,7 @@ function Footer() {
          isLightTheme ? 'text-gray-600' : 'text-gray-600'
        }`}>
         <div>
-            © 2025 Arun yadav. All rights reserved.
+            © 2026 Arun yadav. All rights reserved.
         </div>
         <h2>Keep Coding</h2>
        </div>

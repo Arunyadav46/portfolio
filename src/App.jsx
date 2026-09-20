@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import { ThemeProvider, useTheme } from './Context/ThemeContext'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
@@ -11,6 +12,18 @@ import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import Loader from './Components/Loader'
 
+function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 24, restDelta: 0.001 });
+
+  return (
+    <motion.div
+      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 origin-left z-[70]"
+      style={{ scaleX }}
+    />
+  );
+}
+
 function AppContent() {
   const { isLightTheme } = useTheme();
 
@@ -18,6 +31,7 @@ function AppContent() {
     <div className={`w-full p-4 xl:p-10 xl:px-52 transition-colors duration-300 ${
       isLightTheme ? 'bg-gray-50' : 'bg-[#11111b]'
     }`}>
+       <ScrollProgress />
        <Navbar/>
        <Hero/>
        <About/>

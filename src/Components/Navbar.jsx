@@ -44,9 +44,9 @@ function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`xl:w-full w-full p-3 md:p-5 xl:h-[10vh] flex items-center justify-between xl:px-8 rounded-full border border-white/20 transition-all duration-300 ${
-          isLightTheme ? 'bg-white' : 'bg-[#112240]'
-        } ${isScrolled ? 'shadow-lg' : ''}`}
+        className={`sticky top-3 z-50 xl:w-full w-full p-3 md:p-5 xl:h-[10vh] flex items-center justify-between xl:px-8 rounded-full border backdrop-blur-md transition-all duration-300 ${
+          isLightTheme ? 'bg-white/80 border-gray-200' : 'bg-[#112240]/80 border-white/20'
+        } ${isScrolled ? 'shadow-lg shadow-purple-500/10' : ''}`}
       >
         <motion.div 
           className='w-[10%] md:w-[3%]'

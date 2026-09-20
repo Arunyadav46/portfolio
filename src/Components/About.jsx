@@ -38,7 +38,7 @@ function About() {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Hello! I'm <span className="text-blue-500 font-semibold">Arun Yadav</span>, a passionate React frontend developer who loves crafting sleek interfaces and building interactive, user-friendly web experiences.
+              Hello! I'm <span className="text-blue-500 font-semibold">Arun Yadav</span>, a React.js Developer with 1+ year of experience building ERP and Admin Dashboard applications, focused on scalable, responsive, and user-friendly web experiences.
             </motion.p>
             <motion.p 
               className='text-justify'
@@ -46,7 +46,7 @@ function About() {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              As an Electrical and Electronics Engineering student, I started coding in 3rd year out of passion. Since then, I've built responsive web apps using ReactJS and Tailwind CSS—proving consistency matters more than background.
+              I graduated in 2025 with a BTech in Electrical and Electronics Engineering. I started coding in my 3rd year out of passion, and now I work with React.js, Next.js, TypeScript, Redux Toolkit, REST APIs, and Tailwind CSS—along with basic DevOps, GitHub Actions, and frontend deployment.
             </motion.p>
             <motion.p 
               className='text-just'
@@ -54,7 +54,7 @@ function About() {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              I'm currently focused on learning, collaborating, and continuously pushing my skills to the next level.
+              I'm currently focused on building production-ready dashboards, integrating APIs and AI, and continuously pushing my frontend skills to the next level.
             </motion.p>
           </motion.div>
 
@@ -71,15 +71,15 @@ function About() {
     <pre className={`whitespace-pre-wrap ${isLightTheme ? 'text-gray-900' : 'text-white'}`}>
 <span className="text-blue-400">const</span> developer = {'{'}
   {"\n  "}<span className="text-blue-400">name</span>: <span className="text-green-400">"Arun Yadav"</span>,
-  {"\n  "}<span className="text-blue-400">title</span>: <span className="text-green-400">"React Frontend Developer"</span>,
-  {"\n  "}<span className="text-blue-400">skills</span>: [<span className="text-green-400">"JavaScript", "ReactJS", "Tailwind CSS"</span>],
-  {"\n  "}<span className="text-blue-400">tools</span>: [<span className="text-green-400">"VS Code", "Git", "GitHub", "Vercel"</span>],
-  {"\n  "}<span className="text-blue-400">passion</span>: <span className="text-green-400">"Designing modern UIs & building responsive websites"</span>,
+  {"\n  "}<span className="text-blue-400">title</span>: <span className="text-green-400">"React.js Developer"</span>,
+  {"\n  "}<span className="text-blue-400">skills</span>: [<span className="text-green-400">"React.js", "Next.js", "TypeScript", "Redux Toolkit"</span>],
+  {"\n  "}<span className="text-blue-400">tools</span>: [<span className="text-green-400">"Git", "GitHub", "VS Code", "Postman", "Vercel"</span>],
+  {"\n  "}<span className="text-blue-400">passion</span>: <span className="text-green-400">"Building scalable, responsive web applications"</span>,
   {"\n  "}<span className="text-blue-400">motto</span>: <span className="text-green-400">"Code smart, design sharp"</span>
 {"\n"};
 
 {"\n\n"}<span className="text-blue-400">function</span> currentFocus() {'{'}
-{"\n  "}<span className="text-blue-400">return</span> <span className="text-green-400">"Building my portfolio and real-world client projects"</span>;
+{"\n  "}<span className="text-blue-400">return</span> <span className="text-green-400">"Building ERP dashboards, REST APIs, and AI-powered apps"</span>;
 {"\n"}
     </pre>
           </motion.div>
