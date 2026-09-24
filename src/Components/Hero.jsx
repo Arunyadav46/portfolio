@@ -172,7 +172,7 @@ function Hero() {
         whileHover={{ scale: 1.05, x: 5 }}
       >
         <i className="ri-map-pin-line"></i>
-        <span>Bhopal, India</span>
+        <span>Bengaluru, Karnataka, India</span>
       </motion.div>
     </motion.div>
 
